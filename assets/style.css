@@ -1,0 +1,132 @@
+
+/* Case Western Reserve University-inspired simple theme */
+:root{
+  --cwru-blue: #041E42; /* Primary */
+  --cwru-light: #f7f9fc;
+  --cwru-accent: #6c9bd2;
+  --text: #222;
+  --muted: #555;
+  --border: #e5e7eb;
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+               Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji",
+               "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--text);
+  background: white;
+  line-height: 1.6;
+}
+
+.header {
+  background: var(--cwru-blue);
+  color: white;
+  padding: 16px 20px;
+  border-bottom: 4px solid var(--cwru-accent);
+}
+.header .brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.brand .uni {
+  font-weight: 600;
+  letter-spacing: .5px;
+  opacity: .95;
+}
+.brand .course {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.nav {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.25);
+  transition: background .2s ease, opacity .2s ease;
+  opacity: .95;
+}
+.nav a:hover, .nav a[aria-current="page"] {
+  background: rgba(255,255,255,.12);
+  opacity: 1;
+}
+
+.container {
+  max-width: 980px;
+  margin: 24px auto;
+  padding: 0 16px 80px;
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: 0 2px 14px rgba(4,30,66,.04);
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+  margin: 1.2em 0 .5em;
+}
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.15rem; }
+
+.muted { color: var(--muted); }
+
+.table-wrap {
+  overflow-x: auto;
+  background: var(--cwru-light);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  margin-top: 16px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+thead th {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 2px solid var(--border);
+  font-weight: 700;
+  white-space: nowrap;
+}
+tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+tbody tr:last-child td { border-bottom: none; }
+
+.badge {
+  display: inline-block;
+  font-size: .8rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--cwru-light);
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  padding: 22px 16px;
+  text-align: center;
+}
