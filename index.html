@@ -19,7 +19,7 @@
     <nav class="nav">
       <a href="index.html">Home</a>
       <a href="logistics.html">Logistics</a>
-      <a href="https://canvas.case.edu" target="_blank" rel="noopener">Canvas</a>
+      <a href="https://canvas.case.edu/courses/49910" target="_blank" rel="noopener">Canvas</a>
     </nav>
   </header>
 
@@ -27,32 +27,10 @@
     <section class="card">
       <div id="home-md"></div>
       <!-- Inline Markdown for Home -->
-      <script type="text/markdown" id="home-inline"># CSDS 447: Responsible AI Engineering
-
-**Instructor:** Sumon Biswas  
-
-**Office:** Olin Hall 608  
-
-**Email:** [sumon@case.edu](mailto:sumon@case.edu)  
-
-**Office Hours:** TBD (see Canvas)  
-
-<!-- **Pre-requisites:** CSDS 340/391/440 or Graduate standing   -->
-
-<!-- **Recommended Background:** Maturity in computational reasoning and ML programming. -->
-
----
+      <script type="text/markdown" id="home-inline">
 
 ## Overview
 The deployment of modern AI systems presents new engineering challenges—bias amplification, safe autonomy, hallucinations, and more. This course teaches how to design and maintain AI-enabled software systems that meet key responsible-AI requirements: **fairness**, **robustness**, **explainability**, and **safety**. In addition to accuracy, we emphasize testing, verification, and maintainability of ML components. Students will read current research and complete a hands-on group project that applies these principles to a real system.
-
-**Objectives**
-- Software engineering for AI models and systems  
-- Deep understanding of responsible-AI properties  
-- Hands-on experience with evaluation and mitigation methods  
-- Exposure to current research and open challenges
-
-&gt; The schedule below is **tentative** and will be updated as needed; changes will be announced in class and on Canvas.
 </script>
     </section>
 
@@ -77,8 +55,8 @@ The deployment of modern AI systems presents new engineering challenges—bias a
       </div>
       <!-- Inline CSV for Schedule -->
       <script type="text/csv" id="schedule-inline">Date,Topic,Reading,Events
-Aug 26,Introduction &amp; course overview,Syllabus + selected readings on Canvas,In-class Quiz 1
-Aug 28,Overview of Responsible AI,—, —
+Aug 26,L1: Introduction &amp; course overview,Syllabus,—
+Aug 28,L2: Overview of Responsible AI,—, —
 Sep 2,—, —, —
 Sep 4,—, —, —
 Sep 9,—, —, —
@@ -111,6 +89,32 @@ Dec 9, —, —, Project report due
 
 </script>
     </section>
+
+<section class="card" style="margin-top:20px;">
+  <div id="instructor-md"></div>
+
+  <!-- Inline Markdown for Instructor info -->
+  <script type="text/markdown" id="instructor-inline">
+## Instructor & Course Info
+
+**Instructor:** Sumon Biswas  
+**Office:** Olin Hall 608  
+**Email:** [sumon@case.edu](mailto:sumon@case.edu)  
+**Office Hours:** TBD (see Canvas)  
+
+  </script>
+
+  <!-- Render that markdown once the page is ready -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof renderMarkdownFromScript === 'function') {
+        renderMarkdownFromScript('instructor-inline', 'instructor-md');
+      }
+    });
+  </script>
+</section>
+
+
   </main>
 
   <footer class="footer">
