@@ -86,6 +86,7 @@ h2 { font-size: 1.4rem; }
 h3 { font-size: 1.15rem; }
 
 .muted { color: var(--muted); }
+.red { color: red; }
 
 .table-wrap {
   overflow-x: auto;
